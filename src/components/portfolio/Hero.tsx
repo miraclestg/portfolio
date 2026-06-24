@@ -3,13 +3,13 @@ import { ArrowDown, Github, Linkedin, Mail, Terminal, Code2, Sparkles, FileText,
 import { Button } from "@/components/ui/button";
 import { siteConfig, getAcademicProgress, getDaysRemaining } from "@/data/config";
 
-const titles = ["Cybersecurity Enthusiast", "Back-end Developer", "HUFLIT Student", "Tech Explorer"];
+const titles = ["Cybersecurity Enthusiast", "HUFLIT Student", "Tech Explorer"];
 
 const codeLines = [
   { text: "const developer = {", delay: 0 },
   { text: `  name: "${siteConfig.author}",`, delay: 100 },
   { text: '  role: "Cybersecurity Enthusiast",', delay: 200 },
-  { text: "  skills: ['C#', 'Java', 'Python', 'Security'],", delay: 300 },
+  { text: "  skills: ['C#', 'Java', 'Python', 'Bash'],", delay: 300 },
   { text: "  passion: 'Securing the digital world',", delay: 400 },
   { text: "  available: true", delay: 500 },
   { text: "};", delay: 600 },
@@ -94,7 +94,7 @@ const Hero = () => {
             <div className="opacity-0 animate-fade-in" style={{ animationDelay: "0.1s", animationFillMode: "forwards" }}>
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-primary/20 to-accent/20 border border-primary/30 text-primary text-sm font-medium mb-6">
                 <Sparkles size={16} className="animate-pulse" />
-                Cybersecurity & Network Administrator
+                Cybersecurity & System Administrator
               </span>
             </div>
 
