@@ -17,8 +17,7 @@ const codeLines = [
 
 const Hero = () => {
   const [titleIndex, setTitleIndex] = useState(0);
-  const [displayedTitle, setDisplayedTitle] = useState("");
-  const [isDeleting, setIsDeleting] = useState(false);
+  const [isTitleVisible, setIsTitleVisible] = useState(true);
   const [visibleLines, setVisibleLines] = useState<number[]>([]);
   const [progressPercentage, setProgressPercentage] = useState(0);
   const [daysRemaining, setDaysRemaining] = useState(0);
@@ -38,25 +37,20 @@ const Hero = () => {
   }, []);
 
   useEffect(() => {
-    const currentTitle = titles[titleIndex];
-    const timeout = setTimeout(() => {
-      if (!isDeleting) {
-        if (displayedTitle.length < currentTitle.length) {
-          setDisplayedTitle(currentTitle.slice(0, displayedTitle.length + 1));
-        } else {
-          setTimeout(() => setIsDeleting(true), 2000);
-        }
-      } else {
-        if (displayedTitle.length > 0) {
-          setDisplayedTitle(currentTitle.slice(0, displayedTitle.length - 1));
-        } else {
-          setIsDeleting(false);
-          setTitleIndex(prev => (prev + 1) % titles.length);
-        }
-      }
-    }, isDeleting ? 50 : 100);
-    return () => clearTimeout(timeout);
-  }, [displayedTitle, isDeleting, titleIndex]);
+    const showTimeout = window.setTimeout(() => {
+      setIsTitleVisible(false);
+    }, 1800);
+
+    const swapTimeout = window.setTimeout(() => {
+      setTitleIndex((prev) => (prev + 1) % titles.length);
+      setIsTitleVisible(true);
+    }, 2200);
+
+    return () => {
+      window.clearTimeout(showTimeout);
+      window.clearTimeout(swapTimeout);
+    };
+  }, [titleIndex]);
 
   const handleScrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -116,9 +110,10 @@ const Hero = () => {
 
             <div className="text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-8 h-10 opacity-0 animate-fade-in flex items-center justify-center lg:justify-start" style={{ animationDelay: "0.3s", animationFillMode: "forwards" }}>
               <Code2 size={28} className="text-primary mr-3" />
-              <span className="font-mono">
-                {displayedTitle}
-                <span className="inline-block w-0.5 h-7 bg-primary ml-1 animate-blink" />
+              <span
+                className={`font-mono transition-all duration-700 ${isTitleVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-6"}`}
+              >
+                {titles[titleIndex]}
               </span>
             </div>
 

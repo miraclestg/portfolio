@@ -34,20 +34,15 @@ export const skillCategories: SkillCategory[] = [
             { name: "Tailwind CSS", icon: "logos:tailwindcss-icon" },
             { name: "ASP.NET Core", icon: "devicon:dotnetcore" },
             { name: "Entity Framework", icon: "devicon:dotnetcore" },
-            { name: "SignalR", icon: "simple-icons:signalr" },
-            { name: "Android", icon: "logos:android-icon" },
             { name: "Firebase", icon: "logos:firebase" },
             { name: "PostgreSQL", icon: "logos:postgresql" },
             { name: "SQL Server", icon: "devicon:microsoftsqlserver" },
-            { name: "Redis", icon: "logos:redis" },
             { name: "Nginx", icon: "logos:nginx" },
             { name: "Docker", icon: "logos:docker-icon" },
             { name: "Git", icon: "logos:git-icon" },
             { name: "GitHub", icon: "logos:github-icon" },
             { name: "VS Code", icon: "logos:visual-studio-code" },
             { name: "Visual Studio", icon: "devicon:visualstudio" },
-            { name: "IntelliJ IDEA", icon: "logos:intellij-idea" },
-            { name: "PyCharm", icon: "logos:pycharm" },
         ]
     },
     {
@@ -63,9 +58,7 @@ export const skillCategories: SkillCategory[] = [
             { name: "Postman", icon: "logos:postman-icon" },
             { name: "VMware", icon: "simple-icons:vmware" },
             { name: "Volatility", icon: "mdi:memory" },
-            { name: "dnSpy", icon: "mdi:code-braces" },
             { name: "x64dbg", icon: "mdi:bug-outline" },
-            { name: "FFmpeg", icon: "logos:ffmpeg-icon" },
         ]
     },
     {
@@ -75,8 +68,6 @@ export const skillCategories: SkillCategory[] = [
             { name: "ChatGPT", icon: "simple-icons:openai" },
             { name: "Claude", icon: "simple-icons:anthropic" },
             { name: "Gemini", icon: "logos:google-bard-icon" },
-            { name: "DeepSeek", icon: "mdi:chart-bubble" },
-            { name: "Perplexity", icon: "simple-icons:perplexity" },
             { name: "GitHub Copilot", icon: "logos:github-octocat" },
         ]
     }
