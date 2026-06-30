@@ -15,7 +15,7 @@ export const siteConfig = {
         github: "https://github.com/miraclestg",
         facebook: "https://www.facebook.com/ly.hong.phuong.an.2024/",
         //instagram: "https://www.instagram.com/tht._csec",
-        //leetcode: "https://leetcode.com/thtcsec",
+        leetcode: "https://leetcode.com/u/lyhongphuongan/",
         //tiktok: "https://www.tiktok.com/@tuhocleetcode",
         //discord: "https://discord.com/users/815074234241646592",
     },

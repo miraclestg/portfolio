@@ -40,7 +40,7 @@ const ThemeToggle = () => {
             aria-label="Toggle theme"
         >
             {isDark ? (
-                <Sun size={20} className="text-yellow-500" />
+                <Sun size={20} className="text-primary" />
             ) : (
                 <Moon size={20} className="text-slate-700" />
             )}

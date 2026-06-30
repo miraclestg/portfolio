@@ -127,16 +127,7 @@ const Contact = () => {
                   <Icon icon="logos:tiktok-icon" className="w-6 h-6" />
                   <span className="text-xs text-muted-foreground">TikTok</span>
                 </a>
-                <a
-                  href={siteConfig.social.gdg}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex flex-col items-center gap-2 p-3 rounded-xl bg-card border border-border hover:border-primary/50 transition-all duration-300 hover:-translate-y-1"
-                  aria-label="GDG"
-                >
-                  <Icon icon="logos:google-developers" className="w-6 h-6" />
-                  <span className="text-xs text-muted-foreground">GDG</span>
-                </a>
+
               </div>
             </div>
           </div>

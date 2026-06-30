@@ -10,7 +10,6 @@ const navItems = [
   { label: "Skills", href: "#skills" },
   { label: "Projects", href: "#projects" },
   { label: "Certificates", href: "#certificates" },
-  { label: "Community", href: "#community" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -72,7 +71,7 @@ const Header = () => {
               handleNavClick("#home");
             }}
           >
-            phuongan<span className="text-primary">.sec</span>
+            phuongan<span className="text-primary">.dev</span>
           </a>
 
           {/* Desktop Navigation - Takes full space when scrolled */}

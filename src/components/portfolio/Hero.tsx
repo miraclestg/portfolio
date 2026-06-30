@@ -183,7 +183,7 @@ const Hero = () => {
                 <div className="flex items-center gap-2 px-4 py-3 border-b border-border/50 bg-muted/50">
                   <div className="flex gap-2">
                     <div className="w-3 h-3 rounded-full bg-destructive/80" />
-                    <div className="w-3 h-3 rounded-full bg-yellow-500/80" />
+                    <div className="w-3 h-3 rounded-full bg-primary/80" />
                     <div className="w-3 h-3 rounded-full bg-green-500/80" />
                   </div>
                   <div className="flex-1 flex justify-center">
