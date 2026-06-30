@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { ArrowDown, Github, Linkedin, Mail, Terminal, Code2, Sparkles, FileText, Facebook, Shield, AlertTriangle } from "lucide-react";
+import { ArrowDown, Github, Linkedin, Mail, Terminal, Code2, Sparkles, FileText, Facebook, Shield, AlertTriangle, Activity } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { siteConfig, getAcademicProgress, getDaysRemaining } from "@/data/config";
 
@@ -177,10 +177,10 @@ const Hero = () => {
               {/* Glow Effect */}
               <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 to-accent/20 rounded-2xl blur-2xl" />
 
-              {/* Code Editor */}
-              <div className="relative rounded-2xl overflow-hidden border border-border/50 bg-card/80 backdrop-blur-xl shadow-2xl">
-                {/* Title Bar */}
-<div className="flex items-center gap-2 px-4 py-3 border-b border-border/50 bg-muted/50">
+{/* Code Editor */}
+               <div className="relative rounded-2xl overflow-hidden border border-border/50 bg-card/80 backdrop-blur-xl shadow-2xl">
+                 {/* Title Bar */}
+                 <div className="flex items-center gap-2 px-4 py-3 border-b border-border/50 bg-muted/50">
                    <div className="flex gap-2">
                      <div className="w-3 h-3 rounded-full bg-destructive/80" />
                      <div className="w-3 h-3 rounded-full bg-primary/80" />
