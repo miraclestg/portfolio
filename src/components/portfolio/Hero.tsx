@@ -1,17 +1,17 @@
 import { useEffect, useState } from "react";
-import { ArrowDown, Github, Linkedin, Mail, Terminal, Code2, Sparkles, FileText, Facebook } from "lucide-react";
+import { ArrowDown, Github, Linkedin, Mail, Terminal, Code2, Sparkles, FileText, Facebook, Shield, AlertTriangle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { siteConfig, getAcademicProgress, getDaysRemaining } from "@/data/config";
 
-const titles = ["Cybersecurity Enthusiast", "HUFLIT Student", "Tech Explorer"];
+const titles = ["SOC Analyst", "Threat Hunter", "Security Researcher", "HUFLIT Student"];
 
 const codeLines = [
-  { text: "const developer = {", delay: 0 },
+  { text: "const socAnalyst = {", delay: 0 },
   { text: `  name: "${siteConfig.author}",`, delay: 100 },
-  { text: '  role: "Cybersecurity Enthusiast",', delay: 200 },
-  { text: "  skills: ['C#', 'Java', 'Python', 'Bash'],", delay: 300 },
-  { text: "  passion: 'Securing the digital world',", delay: 400 },
-  { text: "  available: true", delay: 500 },
+  { text: '  role: "SOC Analyst",', delay: 200 },
+  { text: "  skills: ['SIEM', 'Threat Intel', 'Incident Response', 'Log Analysis'],", delay: 300 },
+  { text: "  tools: ['Splunk', 'Wazuh', 'ELK', 'Zeek', 'Suricata'],", delay: 400 },
+  { text: "  focus: 'Detecting & Defeating Threats'", delay: 500 },
   { text: "};", delay: 600 },
 ];
 
@@ -88,7 +88,7 @@ const Hero = () => {
             <div className="opacity-0 animate-fade-in" style={{ animationDelay: "0.1s", animationFillMode: "forwards" }}>
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-primary/20 to-accent/20 border border-primary/30 text-primary text-sm font-medium mb-6">
                 <Sparkles size={16} className="animate-pulse" />
-                Cybersecurity & System Administrator
+                SOC Analyst & Threat Hunter
               </span>
             </div>
 
@@ -180,19 +180,19 @@ const Hero = () => {
               {/* Code Editor */}
               <div className="relative rounded-2xl overflow-hidden border border-border/50 bg-card/80 backdrop-blur-xl shadow-2xl">
                 {/* Title Bar */}
-                <div className="flex items-center gap-2 px-4 py-3 border-b border-border/50 bg-muted/50">
-                  <div className="flex gap-2">
-                    <div className="w-3 h-3 rounded-full bg-destructive/80" />
-                    <div className="w-3 h-3 rounded-full bg-primary/80" />
-                    <div className="w-3 h-3 rounded-full bg-green-500/80" />
-                  </div>
-                  <div className="flex-1 flex justify-center">
-                    <div className="flex items-center gap-2 px-3 py-1 rounded-md bg-muted text-xs text-muted-foreground">
-                      <Terminal size={12} />
-                      developer.ts
-                    </div>
-                  </div>
-                </div>
+<div className="flex items-center gap-2 px-4 py-3 border-b border-border/50 bg-muted/50">
+                   <div className="flex gap-2">
+                     <div className="w-3 h-3 rounded-full bg-destructive/80" />
+                     <div className="w-3 h-3 rounded-full bg-primary/80" />
+                     <div className="w-3 h-3 rounded-full bg-green-500/80" />
+                   </div>
+                   <div className="flex-1 flex justify-center">
+                     <div className="flex items-center gap-2 px-3 py-1 rounded-md bg-muted text-xs text-muted-foreground">
+                       <Terminal size={12} />
+                       soc_analyst.py
+                     </div>
+                   </div>
+                 </div>
 
                 {/* Code Content */}
                 <div className="p-6 font-mono text-sm">
@@ -221,13 +221,13 @@ const Hero = () => {
                 </div>
               </div>
 
-              {/* Floating Elements */}
-              <div className="absolute -top-6 -right-6 p-3 rounded-xl bg-gradient-to-br from-primary to-accent shadow-lg animate-float">
-                <Code2 size={24} className="text-primary-foreground" />
-              </div>
-              <div className="absolute -bottom-4 -left-4 p-3 rounded-xl bg-card border border-border shadow-lg animate-float" style={{ animationDelay: "1s" }}>
-                <Terminal size={20} className="text-primary" />
-              </div>
+{/* Floating Elements */}
+               <div className="absolute -top-6 -right-6 p-3 rounded-xl bg-gradient-to-br from-primary to-accent shadow-lg animate-float">
+                 <Shield size={24} className="text-primary-foreground" />
+               </div>
+               <div className="absolute -bottom-4 -left-4 p-3 rounded-xl bg-card border border-border shadow-lg animate-float" style={{ animationDelay: "1s" }}>
+                 <AlertTriangle size={20} className="text-primary" />
+               </div>
             </div>
           </div>
         </div>

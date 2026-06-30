@@ -8,7 +8,7 @@ export const siteConfig = {
     location: "Ho Chi Minh City, Vietnam",
     university: "HUFLIT",
     major: "Cybersecurity",
-    bio: "IT Specialist focused on Cybersecurity and Software Development. Currently pursuing Information Technology at HUFLIT.",
+    bio: "SOC Analyst & Threat Hunter specializing in SIEM, incident response, and threat detection. Currently pursuing Information Technology with focus on Cybersecurity at HUFLIT.",
 
     social: {
         linkedin: "https://www.linkedin.com/in/ph%C6%B0%C6%A1ng-%C3%A2n-l%C3%BD-h%E1%BB%93ng-658655292/",
