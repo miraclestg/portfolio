@@ -25,7 +25,7 @@ const About = () => {
           </p>
           <p className="text-muted-foreground mb-8 leading-relaxed">
             I would love to expand my knowledge and contribute to the tech community through innovative projects and continuous learning.
-            Currently focusing on DevSecOps practices and building secure, scalable applications.
+            Currently focusing on SOC practices and building secure, scalable applications.
           </p>
         </div>
       </div>
