@@ -14,7 +14,7 @@ export const certificates: Certificate[] = [
         id: "network-architecture",
         title: "Network Architecture",
         issuer: "Google",
-        image: "/images/certificates/network_architecture.pdf",
+        image: "/images/certificates/network_architecture.jpg",
         type: "certificate"
     },
     ];
